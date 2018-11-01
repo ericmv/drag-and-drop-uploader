@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Drag and Drop</title>
+  <meta name="description" content="Drag and Drop">
+  <meta name="author" content="Eric Vu">
+
+  <link rel="stylesheet" href="stylesheets/styles.css?v=1.0">
+
+</head>
+
+<body>
+
+  <form id="upload-form" name="form" action="/upload" method="POST" enctype="multipart/form-data">
+    <fieldset id="drop-container">
+        <legend><h2>File Upload</h2></legend>
+        <div id="drop-box" ondrop="handleDrop(event)">
+          <div id="drop-box-text">
+            <p>Drag and drop a file here to upload!</p>
+            <input type="file" name="file" id="file-input" style="display:none;" />
+          </div>
+        </div>
+        <div class="data">
+          name: <div class="value" id="name"></div><br/>
+          type: <div class="value" id="type"></div><br/>
+          size: <div class="value" id="size"></div><br/>
+        </div>
+        <button type="submit" id="submit-button">Submit</button>
+        <!-- <button type="button" id="submit-button2" onclick="handleSubmit()">Submit2</button> -->
+    </fieldset>
+  </form>
+  <script src="javascripts/index.js"></script>
+</body>
+</html>

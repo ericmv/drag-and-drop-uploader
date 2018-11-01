@@ -1,0 +1,49 @@
+
+#drop-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 700px;
+  border: 2px solid;
+}
+
+#drop-box {
+  background-color: Yellow;
+  font-family: Helvetica;
+  border: 2px dashed black;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+#drop-box-text p {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+}
+
+#drop-box.dragged-over {
+  border: 2px dashed grey;
+  opacity: .8;
+}
+
+#submit-button {
+  margin-top: 10px;
+  visibility: hidden;
+}
+
+.value {
+  display: inline-block;
+  font-weight: bold;
+}
+
+#submit-button.visible {
+  visibility: visible;
+}
